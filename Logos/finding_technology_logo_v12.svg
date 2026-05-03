@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="360" height="100" viewBox="0 0 360 100" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="techBlue" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#007AFF"/>
+      <stop offset="100%" style="stop-color:#5E5CE6"/>
+    </linearGradient>
+  </defs>
+
+  <!-- 指南针：双菱形指针（与外圈连接） -->
+  <g transform="translate(42,50)">
+    <!-- 外圈 -->
+    <circle cx="0" cy="0" r="30" fill="none" stroke="url(#techBlue)" stroke-width="1.5"/>
+    <!-- 中心圆点 -->
+    <circle cx="0" cy="0" r="4" fill="#34C759"/>
+    <!-- 上菱形指针（尖端连接到外圈上侧） -->
+    <path d="M0,-30 L-5,-22 L0,-14 L5,-22 Z" fill="#007AFF"/>
+    <!-- 下菱形指针（尖端连接到外圈下侧） -->
+    <path d="M0,30 L-5,22 L0,14 L5,22 Z" fill="#007AFF"/>
+    <!-- 贯穿中心的小线段（连接两菱形，体现一体性） -->
+    <line x1="0" y1="-14" x2="0" y2="14" stroke="url(#techBlue)" stroke-width="2.5" stroke-linecap="round"/>
+  </g>
+
+  <!-- 公司名称 -->
+  <text x="95" y="55"
+        font-family="Inter, SF Pro Text, PingFang SC, -apple-system, BlinkMacSystemFont, sans-serif"
+        font-size="24"
+        font-weight="600"
+        fill="url(#techBlue)">Finding Technology</text>
+
+  <!-- 副标语 -->
+  <text x="95" y="78"
+        font-family="Inter, SF Pro Text, sans-serif"
+        font-size="12"
+        font-weight="400"
+        fill="#6B7280"
+        letter-spacing="1">Make Life Easy</text>
+</svg>
